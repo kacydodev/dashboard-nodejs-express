@@ -1,5 +1,5 @@
 import express from 'express';
-import { startupsRouter } from '../routes/startupsRouter.js';
+import { startupsRouter } from './routes/startupsRouter.js';
 
 const PORT = 8000;
 
