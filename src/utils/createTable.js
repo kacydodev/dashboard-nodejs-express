@@ -2,7 +2,7 @@ import sqlite3 from 'sqlite3';
 import { open } from 'sqlite';
 import path from 'node:path';
 
-// Node command: node src/createTable.js
+// Node command: node src/utils/createTable.js
 async function createTable() {
   const db = await open({
     filename: path.join('__dirname', '..', 'src', 'data', 'database.db'),
