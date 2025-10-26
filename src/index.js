@@ -1,11 +1,12 @@
 import express from 'express';
-import { startupsRouter } from './routes/startupsRouter.js';
+import { productsRouter, startupsRouter } from './routes/router.js';
 
 const PORT = 8000;
 
 const app = express();
 
 app.use('/api/startups', startupsRouter);
+app.use('/api/products', productsRouter);
 
 app.use((req, res) => {
   res.status(404);
